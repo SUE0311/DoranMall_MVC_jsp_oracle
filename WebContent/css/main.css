@@ -1,0 +1,459 @@
+@CHARSET "EUC-KR";
+
+/*
+# UserInterface Reference(참고 UI)
+Theme URI: http://www.colouredlines.com.au
+Author: Yoke
+Author URI: http://www.yokedesign.com.au/
+Description: Yoke does Coloured Lines' WordPress theme
+Version: 1.0
+*/
+ 
+/* 
+# 작성자 : 이지수
+# 작성일 : 2013.07.31 
+*/
+ 
+/* reset style(default style) */
+html, body, div, span, p, a, 
+em, font, img, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-family: "Tahoma", "나눔고딕", "NanumGothic", "맑은 고딕", "Malgun Gothic", "굴림", "Gulim", "sans-serif";
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+img {
+	border:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+:focus {
+	outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+
+.clear {
+	clear:both; 
+}
+
+
+/* IE lacks these rules */
+article, aside, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+/*input style*/
+input, input[type="password"]{
+	/* border: 0; */
+	color: #6d6e71;
+	font-size: 13px;
+	padding: 5px 10px;
+	border-radius:5px;
+	cursor: pointer;
+}
+
+textarea{
+	height: 10em;
+	padding: 8px 10px;
+	color: #6d6e71;
+	font-size: 13px;
+	/* margin-bottom: 10px; */
+	border-radius:5px;
+	cursor: pointer;
+} 
+
+input[type="submit"] {
+	background: #7bcab0;
+	color: #6d6e71;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	opacity: 1;
+	padding:5px 8px;
+}
+
+
+/*
+ * start main style(메인 페이지 스타일 시작)
+ */
+ 
+html.ie {
+/* 	min-height: 600px; */
+	overflow: auto;
+}
+
+body {
+	margin:0;
+	height:750px;
+	min-height: 600px;
+	min-width: 1000px;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+}
+
+
+/*
+ * header (헤더 영역)
+ */
+#header{
+	width:100%;
+	height:100px;
+	position:relative;
+}
+
+#loginArea{
+	position:absolute;
+	top:40px; right:50px;
+}
+
+/*로그인 전 view*/
+#login_before{
+	float:left;
+}
+
+#login_before th{
+	width:100px;
+	text-align:center;
+}
+
+#login_before td{
+	width:150px;
+	text-align:center;
+	border: none;
+}
+
+#login_menu{
+	float:left;
+	padding-left:20px;
+}
+
+/*로그인 후 view*/
+#login_after{
+	width:550px;
+	float:left;
+}
+
+#login_after td{
+	text-align:center;
+	border:none;
+}
+
+#logName{
+	color:#3366FF;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+/*로그인 관련 include 페이지 스타일*/
+#login_beforeforheader{
+	width:200px;
+	float:left;
+}
+
+#login_beforeforheader td{
+	text-align:center;
+	border:none;
+}
+
+#loginforsubpage{
+	margin-top:40px;
+	width:550px;
+}
+
+#bottomdesc{
+	font-size:14px;
+	color:#666699;
+}
+
+.titlecolor{
+	color:#800000;
+}
+
+/*
+ * content (컨텐츠 영역)
+ */
+#content_wrapper {
+	height: 710px;
+	min-height: 710px;
+	min-width: 700px;
+	width: 100%;
+	position:relative;
+	margin:0 auto;
+}
+
+.circle {
+	float: left;
+	left: 40%;
+	position: absolute;
+	z-index: 3;
+}
+
+/*좌측 홈 화면*/
+.social-buttons {
+	float: left;
+	height: 30px;
+	margin: 40px 0px 40px 40px;
+	position: relative;
+	width: 125px;
+	z-index: 3;
+}
+.social-buttons a {
+	background-image: url(../images/icons-social_media.png);
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	height: 24px;
+	margin: 0 0 0 10px;
+	width: 25px;
+}
+.social-buttons a.facebook {
+	background-position: left bottom;
+}
+.social-buttons a.linkedin {
+	background-position: center bottom;
+	margin-right: 10px;
+}
+.social-buttons a.twitter {
+	background-position: right bottom;
+}
+.social-buttons a.facebook:hover {
+	background-position: left top;
+}
+.social-buttons a.linkedin:hover {
+	background-position: center top;
+}
+.social-buttons a.twitter:hover {
+	background-position: right top;
+}
+.social-buttons .border {
+	border-right: 2px solid #c2c2c3;
+	display: block;
+	float: left;
+	height: 36px;
+	margin-top: -6px;
+}
+
+.home-block {
+	background: #fff;
+	color: #58585a;
+	height: 650px;
+	float: left;
+	left: 0;
+	position: absolute;
+	width: 40%;
+	z-index: 12;
+}
+
+/*홈 메인 사이트명(로고)*/
+.home-block h1 {
+	color: #58585a;
+	/* font-family: sans-serif; */
+	font-size: 65px;
+	font-weight: 600;
+	letter-spacing: -5px;
+	margin-left: 55px;
+	margin-top: -180px;
+	position: absolute;
+	top: 50%;
+}
+
+html.ie7 .home-block h1,
+html.ie7 .home-block .home-content {
+	left: 0;
+}
+
+/*홈 메인 사이트명 하단(사이트 소개)*/
+.home-block .home-content {
+	/* bottom: 300px; */
+	top:480px;
+	position: absolute;
+	margin-bottom: 40px;
+	margin-left: 60px;
+}
+.home-block .home-content p {
+	font-size: 12px;
+	/* line-height: 1.3em; */
+	line-height: 21px;
+}
+
+.home-block .home-content img {
+	background: #fff;
+	box-shadow: 0px 0px 2px #fff;
+	height: auto;
+	width: 170px;
+}
+
+/*우측 메뉴바*/
+.colours {
+	float: left;
+	/* margin-left: 40%; */
+	margin-bottom: -1px;
+	min-height: 500px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 60%;
+	z-index: 2;
+}
+
+.colour {
+	display: block;
+	height: 88px;
+	position: relative;
+	width: 100%;
+}
+
+.colour_link {
+	display: block;
+	text-decoration: none;
+}
+
+.colour span {
+	color: #fff;
+	display: block;
+	font-size: 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 80px;
+	margin-top: -40px;
+	position: absolute;
+	right: 30px;
+	text-align: right;
+	text-transform: uppercase;
+	top: 50%;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.colour[data-name] span {
+	/* background-image: url(../images/icons.png); */
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: right 5px;
+	padding-right: 100px;
+}
+.colour[data-name="product"] span {
+	
+	background-image: url(../images/2_s.png);
+}
+.colour[data-name="guide"] span {
+	background-image: url(../images/3_s.png);
+}
+.colour[data-name="event"] span {
+	background-image: url(../images/4_s.png);
+}
+.colour[data-name="community"] span {
+	background-image: url(../images/5_s.png);
+}
+.colour[data-name="contactUs"] span {
+	background-image: url(../images/6_s.png);
+}
+
+.colours a.product,
+.content-panel.product,
+.content-box[data-page="product"] {
+	background-color: #f2b701;
+}
+.colours a.guide,
+.content-panel.guide,
+.content-box[data-page="guide"] {
+	background-color: #e57d04;
+}
+
+.colours a.event,
+.content-panel.event,
+.content-box[data-page="event"] {
+	background-color: #b10058;
+}
+
+.colours a.community,
+.content-panel.community,
+.content-box[data-page="community"] {
+	background-color: #3465aa;
+}
+.colours a.contactUs,
+.content-panel.contactUs,
+.content-box[data-page="contactUs"] {
+	background-color: #7cb854;
+}
+
+/* 메뉴 바 spareBar style(3개) */
+.colours a.spareBar1,
+.content-panel.spareBar1,
+.content-box[data-page="spareBar1"] {
+	background-color: #dc0030;
+	/* opacity:0.2; */
+}
+
+.colours a.spareBar2,
+.content-panel.spareBar2,
+.content-box[data-page="spareBar2"] {
+	background-color: #09a275;
+	/* opacity:0.4; */
+}
+
+.colours a.spareBar3,
+.content-panel.spareBar3,
+.content-box[data-page="spareBar3"] {
+	background-color: #7c378a;
+	/* opacity:0.7; */
+}
+
+/*
+ * footer (푸터 영역)
+ */
+#footer{
+	width:100%;
+	height:100px;
+	/* background: #ddd; */
+}
+
+#footerLeft{
+	width:300px;
+	padding:20px 0 0 60px;
+	float:left;
+}
+
+#footerLeft li{
+	float:left;
+	padding-right:25px;
+}
+
+#siteMap{
+	width:700px;
+	padding:20px 0 0 0;
+	float:right;
+}
+
+#siteMap li{
+	float:left;
+	padding-right:25px;
+}

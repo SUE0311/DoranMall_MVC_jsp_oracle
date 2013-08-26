@@ -1,0 +1,150 @@
+@CHARSET "EUC-KR";
+
+#contentArea{
+	margin:30px auto;
+	width:900px
+}
+
+#title{
+	font-size:25px;
+	padding:20px 20px 20px 180px;
+	width:600px;
+	margin:0 auto 30px;
+}
+
+.shop01{
+	color:rgb(169,3,41);
+}
+
+.shop02{
+	color:rgb(44,83,158);
+}
+
+.shop03{
+	color:rgb(0,110,46);
+}
+
+#descPage{
+	width:75%;
+	border:3px solid #f2b701;
+	background:#ebebeb;
+	padding:10px 30px;
+	margin:0 auto;
+}
+
+.products{
+	float:left;
+	border: 2px solid #d4d4d4;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+	border-radius: 5px;
+	outline: 0;
+	margin:70px 30px 0 0;
+	display: block;
+	position:relative;
+}
+
+.products img{
+	width:250px;
+}
+
+.description{
+	height:50px;
+	width:100%;
+	background:#fff;
+	display: block;
+	border-top: 1px solid #ddd;
+	/* display:none; */
+	position:absolute;
+	bottom:0;
+	padding:10px 0;
+	text-align:center;
+}
+
+.description:hover{
+	text-decoration:underline;
+}
+
+
+.gallery{
+/* position:absolute;right:0;top:70px; */
+width:260px;height:200px;
+padding:3px;
+}
+
+.gallery div{
+float:left;
+/* border:2px solid #0080ff */
+}
+
+#thum{
+float:left;
+}
+
+#thum li{
+margin:5px 5px;
+float:left;
+}
+
+#thum li .on{
+/* border:2px solid #0080ff */
+}
+
+#proTableTop{
+	width:850px;
+	margin:0 auto;
+	border-collapse:collapse;
+	background:#ebebeb;
+}
+
+#proTableTop th, td{
+	/* border:1px solid #ededed; */
+	padding:3px 0 3px 20px;
+}
+
+#proTableTop th{
+	font-weight:bold;
+	padding:3px 0 3px 40px;
+}
+
+.selectStyle{
+	padding: 2px 2px;
+	font-size: 15px;
+	font-family: Malgun Gothic;
+}
+
+#payOk{
+	width:150px;
+	padding:8px;
+	font-size:17px;
+	font-weight:bold;
+	margin:0 0 0 50px;
+}
+
+#proTableCenter{
+	width:850px;
+	margin:30px auto 0;
+	border-collapse:collapse;
+}
+
+#proTableCenter th{
+	font-weight:bold;
+	padding:10px 0 10px;
+	background:#FFFF99;
+	text-align:center;
+}
+
+#proTableCenter td{
+	padding:20px 0 10px;
+}
+
+#summary{
+	color:#3399FF;
+}
+
+#saleDate{
+	background:#fff;
+	font-size:18px;
+	color:#FF3300;
+	padding:3px 0 3px 20px;
+}

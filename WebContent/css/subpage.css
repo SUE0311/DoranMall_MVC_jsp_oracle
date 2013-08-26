@@ -1,0 +1,153 @@
+@CHARSET "EUC-KR";
+
+/* 
+# 작성자 : 이지수
+# 작성일 : 2013.07.31 
+*/
+
+#subLogo{
+	padding:30px 0 0 30px;
+}
+
+/*좌측 메뉴바*/
+.colours {
+	/* float: left; */
+	/* margin-left: 40%; */
+	margin-bottom: -1px;
+	min-height: 500px;
+	overflow: hidden;
+	position: absolute;
+	left:0;
+	/* left: -340px; */
+	width: 100px;
+	z-index: 20;
+}
+
+.colour {
+	display: block;
+	height: 88px;
+	position: relative;
+	width: 100%;
+}
+
+.colour_link {
+	display: block;
+	text-decoration: none;
+}
+
+.colour span {
+	color: #fff;
+	display: block;
+	font-size: 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 80px;
+	margin-top: -40px;
+	position: absolute;
+	right: 15px;
+	text-align: right;
+	text-transform: uppercase;
+	top: 50%;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.colour[data-name] span {
+	/* background-image: url(../images/icons.png); */
+	background-repeat: no-repeat;
+	background-position: right 5px;
+	padding-right: 100px;
+}
+
+/*나중에 제이쿼리로 일괄 처리할 예정*/
+.colour[data-name="product"] span {
+	background-image: url(../images/2_s.png);
+}
+.colour[data-name="product"] span:hover {
+	background-image: url(../images/2_n.png);
+}
+.colour[data-name="guide"] span {
+	background-image: url(../images/3_s.png);
+}
+.colour[data-name="guide"] span:hover {
+	background-image: url(../images/3_n.png);
+}
+.colour[data-name="event"] span {
+	background-image: url(../images/4_s.png);
+}
+.colour[data-name="event"] span:hover {
+	background-image: url(../images/4_n.png);
+}
+.colour[data-name="community"] span {
+	background-image: url(../images/6_s.png);
+}
+.colour[data-name="community"] span:hover {
+	background-image: url(../images/6_n.png);
+}
+.colour[data-name="contactUs"] span {
+	background-image: url(../images/5_s.png);
+}
+.colour[data-name="contactUs"] span:hover {
+	background-image: url(../images/5_n.png);
+}
+
+.colours a.product,
+.content-panel.product,
+.content-box[data-page="product"] {
+	background-color: #f2b701;
+}
+.colours a.guide,
+.content-panel.guide,
+.content-box[data-page="guide"] {
+	background-color: #e57d04;
+}
+
+.colours a.event,
+.content-panel.event,
+.content-box[data-page="event"] {
+	background-color: #b10058;
+}
+
+.colours a.community,
+.content-panel.community,
+.content-box[data-page="community"] {
+	background-color: #3465aa;
+}
+.colours a.contactUs,
+.content-panel.contactUs,
+.content-box[data-page="contactUs"] {
+	background-color: #7cb854;
+}
+
+
+/* 메뉴 바 spareBar style(3개) */
+.colours a.spareBar1,
+.content-panel.spareBar1,
+.content-box[data-page="spareBar1"] {
+	background-color: #dc0030;
+	/* opacity:0.2; */
+}
+
+.colours a.spareBar2,
+.content-panel.spareBar2,
+.content-box[data-page="spareBar2"] {
+	background-color: #09a275;
+	/* opacity:0.4; */
+}
+
+.colours a.spareBar3,
+.content-panel.spareBar3,
+.content-box[data-page="spareBar3"] {
+	background-color: #7c378a;
+	/* opacity:0.7; */
+}
+
+/* 서브페이지 우측 메인 컨텐츠 영역 */
+#content_wrapper{
+	height:100%;
+}
+
+#content_c{
+	margin-left:150px;
+}
+

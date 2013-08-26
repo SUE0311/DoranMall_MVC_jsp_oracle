@@ -1,0 +1,50 @@
+<개요>
+1. 어플리케이션 명 : Model2로 만드는 JSP MVC 프로젝트 
+   - DoranDoran e-Shop(도란도란 공동구매 샵)
+2. 작성자 : 이지수
+3. 작성일 : 2013.08.16
+
+<소개>
+이것은 모델 2로 구현하는 자바 웹 프로그래밍 과정(수업)에서 진행한 프로젝트입니다. 
+프로젝트 과정은 2주 가량이었으며 Model2 방식의 MVC 프로그래밍을 학습하기 위하여 진행하였습니다.
+기본적인 주제는 공동구매 쇼핑몰이고 Client view와 Admin view를 분리하여 작업하였습니다.
+
+* 본 프로젝트는 미완성입니다.
+미구현된 페이지가 40%가량 되고, 코드 또한 클린하지 못한 부분이 많습니다.
+(특히, 중복 코드가 심하고, 자바스크립트 및 제이쿼리 유효성 검사가 안 된 폼이 있음...)
+그러나, 스프링 프레임워크 학습 전 진행한 jsp MVC 프로젝트로서 기록을 남기기 위해 올립니다. 
+9월 말 즈음, 스프링 프레임워크를 적용한 Spring MVC Project를 올릴 예정입니다. 
+
+<작업 환경>
+Eclipse IDE - Dynamic Web project
+Oracle 11g
+Tomcat 7.0 
+jsp & Servlet
+
+
+<테스트 순서 및 방법>
+
+1. 이클립스에 프로젝트를 import 하십시오.
+- 프로젝트 경로는 C:\WebProject\DoranMall입니다. 경로가 중요하니 확인해주시기 바립니다.
+- ojdbc6.jar, ckeditor-java-core-3.5.3.jar, cos.jar, jstl.jar, standard.jar 
+총 5개의 jar 파일이 lib 폴더에 포함되어 있습니다. 
+
+2. connection pool이 작동하는지 connect 여부를 확인하십시오.
+- META-INF 폴더에 context.xml 파일에서 설정 값을 확인해주십시오.
+- test 폴더에 dbcpTest.jsp를 run하셔서 연결이 되었다고 출력되면 성공입니다.
+
+3. sql 폴더에 있는 script.sql로 테이블을 만드십시오. 
+- TABLE은 총 7개로 구성되어 있습니다. 
+- 일부 table의 경우 insert를 하시어 테스트가 가능합니다. sql 폴더에 있는 내용을 insert하시면 됩니다.
+(특히, 우편번호 데이터베이스의 경우 zipcode 테이블을 생성 후 zipcode-data 파일의 자료를 insert하셔야 합니다. 
+
+4. 설정이 완료되면 server를 시작하고, 웹 사이트 주소 창에 http://localhost:8099/DoranMall/index.do를 치시면 됩니다. 
+- 포트 번호(8099)는 본인의 컴퓨터에 설정된 포트번호로 변경해주시기 바랍니다. 
+- 혹시 이 방법이 되지 않으실 경우 WebContent 폴더 바로 아래 있는 index.jsp 파일을 run 하시고
+index.jsp 부분에서 jsp -> do로 변경해주시면 다음 페이지로의 이동이 가능합니다. 
+(java Resource 부분의 mtory.properties에 가시면 사이트의 url이 열거되어 있습니다.)
+
+5. 관리자 페이지(admin)는 http://localhost:8099/DoranMall/adminIndex.do로 들어가면 됩니다. 
+- 관리자 페이지에서 유의할 점은 권한 별로 접근이 가능하다는 점입니다. 
+- admin 테이블에 있는 insert 부분을 꼭 실행 한 후  id = admin03, pw : 8520으로 로그인하시면 됩니다.
+ 

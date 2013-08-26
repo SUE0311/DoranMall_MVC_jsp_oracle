@@ -1,0 +1,40 @@
+@CHARSET "EUC-KR";
+/* 
+# 작성자 : 이지수
+# 작성일 : 2013.08.02 
+*/
+
+#contentArea{
+	padding:30px auto;
+}
+
+#title{
+	font-size:25px;
+	padding:20px;
+	color:#7cb854;
+	width:200px;
+	margin:0 auto 30px;
+}
+
+#descPage{
+	width:75%;
+	border:3px solid #7cb854;
+	background:#ebebeb;
+	padding:10px 30px;
+	margin:0 auto;
+}
+
+#applyF{
+	width:60%;
+	margin:20px auto;
+}
+
+#applyF_table th{
+	width:25%;
+	height:40px;
+}
+
+.applyF_btnArea{
+	width:250px;
+	margin:20px auto;
+}

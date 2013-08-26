@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+/* 게시물 목록 보기 디자인 */
+#article_c .boardlist_title{ /* 타이틀 부분 디자인 */
+   margin : 50px 0 0 630px;
+   width : 150px;
+   border-radius : 5px;
+   text-align : center;    /* 텍스트 가운데 정렬 */
+   font-size : 20px;	
+}
+#boardlist_t{  /* 테이블 영역 디자인 부분 */
+   margin : 20px 0 0 350px;
+   width:700px; padding:20px;
+   border:2px solid #3465aa; 
+   border-radius : 5px;
+  
+}
+#boardlist_t th{  /* th 태그 영역 디자인 */
+	background:#3465aa;
+	border-radius : 5px;
+	text-align : center; 	
+	color:white;
+}
+#boardlist_menu .input_b{  /* 버튼 영역 디자인 부분 */
+	margin : 30px 0 0 680px;	
+}
+

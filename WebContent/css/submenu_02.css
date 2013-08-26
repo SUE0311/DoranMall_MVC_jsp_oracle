@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+
+#submenu_02 {
+	background-color:#3465aa;
+	/* margin-left: 40%; */
+	margin-bottom: -1px;
+	min-height: 704px;
+	position: absolute;
+	left: -120px;
+	width: 400px;
+	z-index: 2;
+}
+#subUl{
+	width:200px;
+	padding:355px 0 0 250px;
+}
+
+.submenu02 ul li a{
+	display:block;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.submenu02 ul li a:hover{
+	color:rgb(254,187,187);
+}

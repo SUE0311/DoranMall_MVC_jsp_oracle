@@ -1,0 +1,27 @@
+@CHARSET "EUC-KR";
+
+#contentArea{
+	padding:30px;
+	position:relative;
+}
+
+#title{
+	font-size:25px;
+	padding:20px;
+	color:#b10058;
+	width:400px;
+	margin:0 auto 30px;
+}
+
+#descPage{
+	width:75%;
+	border:3px solid #b10058;
+	background:#ebebeb;
+	padding:10px 30px;
+	margin:0 auto;
+}
+
+#gamePan{
+	width:600px;
+	margin:50px auto;
+}
